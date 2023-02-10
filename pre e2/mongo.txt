@@ -1,0 +1,23 @@
+Create a db named "graduates".
+         use graduates
+Create a collection named "users".
+db.createCollection("users")
+
+Insert the above data in the collection.
+        db.users.insertMany([{},{},...])
+
+Show the data of "Male" users who are "Single".
+db.users.find({gender:"Male",isMarried: false}).pretty()
+
+Show the data of all the "Female" users who scored more that 80 percent.
+    db.users.find({gender:"Female",percentage: {$gt:80}}).pretty()
+
+Show the data of all the users who scored more than or equal to 50 percent.
+db.users.find({percentage: {$gte:50}}).pretty()
+
+Update the data of all the "Female" users and add a field "scholarship":true.
+db.users.updateMany({gender:"Female"},{$set:{scholarship:true}})
+
+Delete the data of all the users who scored less than 40 percent.
+db.users.deleteMany({percentage:{$lt:40}})
+

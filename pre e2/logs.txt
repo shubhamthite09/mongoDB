@@ -1,0 +1,17 @@
+route :/teachers/ and method: GET 
+route :/teachers/ and method: GET 
+route :/students/addstudent and method: GET 
+route ://teachers/addteacher and method: POST 
+route :/addteacher and method: POST 
+route :/teachers/addteacher and method: POST 
+route :/students/addstudent and method: POST 
+route :/students/addstudent and method: POST 
+route :/students/addstudent and method: POST 
+route ://teachers/addteacher and method: POST 
+route :/teachers/addteacher and method: POST 
+route :/students and method: GET 
+route :/students/6 and method: GET 
+route :/teachers and method: GET 
+route :/teachers/112 and method: GET 
+route :/teachers/112 and method: DELETE 
+route :/students/2 and method: DELETE 

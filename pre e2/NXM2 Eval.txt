@@ -1,0 +1,94 @@
+Make a University Management System.
+Make APIs using Express to perform CRUD Operation
+Create a db.json file and consider it as your database.
+{
+    "students":[
+        "roll_no": number,
+        "name": string,
+        "location": string,
+        "course":string
+    ],
+    "teachers":[
+        "emp_id": number,
+        "name": string,
+        "sub": string,
+        "exp": number
+    ]
+
+}
+Create
+"/students/addstudent" :- To add the details of a student to the database. (POST)
+"/teachers/addteacher" :- To add the details of a teacher to the database. (POST)
+Read
+/students :- To get the data of all the students as response from database. (GET)
+/students/:rollNo :- To get the data of the student whose roll number has been passed as a param. (GET)
+/teachers :- To get the data of all the teachers from database. (GET)
+/teachers/:empID :- To get the data of the teacher whose employee id has ben passed as a param. (GET)
+Update
+/students/:rollNo :- To update the details of a student whose roll number has been passed as a param. (PATCH)
+Delete
+/students/:rollNo :- To delete the details of a particular student. (DELETE)
+Middlewares
+Write a Middleware called "logger", it should log the METHOD, ROUTE and 'user-agent' from request headers in a file called logs.txt
+Example of logs.txt file :
+Method: GET, Route: /about, user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36 
+Write a Middleware called "validator", which should protect only the PATCH and DELETE routes.
+It should check if in the URL Query, if the password is equal to 7877 and role is equal to "admin" or "teacher", because only a teacher or admin can update or delete student details. If yes, it should allow the user to modify/delete the post. If not, send a message "You are not authorised to do this operation"
+Note: You can check documentations on how you can get two queries from url.
+You are supposed to logically segregate the code. Routes and Middlewares should be in separate folders. Keep your index file clean.
+
+
+
+
+
+
+
+
+
+Use the following data for this question.
+[{
+ "first_name": "Ida",
+ "last_name": "Hammerman",
+ "percentage": 41,
+ "gender": "Female",
+ "university": "Fordham University",
+ "isMarried": false
+}, {
+ "first_name": "Phyllida",
+ "last_name": "Gauntlett",
+ "percentage": 73,
+ "gender": "Non-binary",
+ "university": "Medical Academy in Bialystok",
+ "isMarried": false
+}, {
+ "first_name": "Gilemette",
+ "last_name": "Balshen",
+ "percentage": 34,
+ "gender": "Female",
+ "university": "Universidad Rey Juan Carlos",
+ "isMarried": false
+}, {
+ "first_name": "Pebrook",
+ "last_name": "Currum",
+ "percentage": 82,
+ "gender": "Male",
+ "university": "Universidade Cruzeiro do Sul",
+ "isMarried": false
+}, {
+ "first_name": "Sidney",
+ "last_name": "Corbert",
+ "percentage": 82,
+ "gender": "Male",
+ "university": "Hogeschool voor Wetenschap en Kunst (VLEKHO), Brussel",
+ "isMarried": false
+}]
+Perform the following:
+Create a db named "graduates".
+Create a collection named "users".
+Insert the above data in the collection.
+Show the data of "Male" users who are "Single".
+Show the data of all the "Female" users who scored more that 80 percent.
+Show the data of all the users who scored more than or equal to 50 percent.
+Update the data of all the "Female" users and add a field "scholarship":true.
+Delete the data of all the users who scored less than 40 percent.
+Note: Write all the commands in the "mongo.txt" and keep the file in same repository where you are going to solve the Problem - I and push this file as well on github.

@@ -1,0 +1,49 @@
+{
+    "students": [
+        {
+            "roll_no": 6,
+            "name": "biru",
+            "location": "bokaro",
+            "course": "web dev"
+        },
+        {
+            "roll_no": 100,
+            "name": "vevek",
+            "location": "bokaro",
+            "course": "web dev"
+        },
+        {
+            "roll_no": 130,
+            "name": "vevek",
+            "location": "bokaro",
+            "course": "web dev"
+        }
+    ],
+    "teachers": [
+        {
+            "emp_id": 34,
+            "name": "Ankush",
+            "sub": "DSA",
+            "exp": 2
+        },
+        {
+            "roll_no": 2,
+            "name": "bire",
+            "location": "bokaro",
+            "course": "coding",
+            "experience": 2
+        },
+        {
+            "emp_id": 7,
+            "name": "vivek",
+            "sub": "coding",
+            "exp": 10
+        },
+        {
+            "emp_id": 100,
+            "name": "manas",
+            "sub": "coding",
+            "exp": 10
+        }
+    ]
+}
